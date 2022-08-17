@@ -11,6 +11,55 @@ nav {
         li {
             list-style: none;
         }
-    }          
+    }
+    
+    &.mobile-menu {
+        .burger-btn::after {
+            content: url('data:image/svg+xml, %3Csvg width="24" height="18" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="white" fill-rule="evenodd"/%3E%3C/svg%3E');
+        }
+            
+        ul {
+            position: absolute;
+            top: 150px;
+            right: 20px;
+            display: none;
+            flex-direction: column;
+            background-color: var(--white);
+            width: calc(100% - 2.6rem);
+            font-size: 2rem;
+            gap:40px;
+            padding: 80px;
+            align-items: center;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -49px;
+                right: 0;
+                width: 0px;
+                height: 0px;
+                border-right: 50px solid var(--white);
+                border-top: 50px solid transparent;
+            }
+
+            a {
+                color: var(--darl-desaturated-blue);
+            }
+
+            li:last-child {
+                margin-top: 20px;
+                
+                a {
+                    font-family: var(--font-fraunces);
+                    background-color: var(--yellow);
+                    color: var(--very-dark-desaturated-blue);
+                    padding: 20px 40px;
+                    border-radius: 50px;
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
 }
     

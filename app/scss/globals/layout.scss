@@ -74,7 +74,7 @@ main {
     section.gallery {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        background-color: #333;
+        background-color: hsl(0, 0%, 20%);
 
         img {
             width: 100%;
@@ -82,3 +82,117 @@ main {
         }
     }
 }
+
+@media screen and (min-width: 1441px) {
+    main {
+        section.about,
+        section.services {
+            min-height: 80vh;
+        }
+    }
+}
+    
+        
+            
+
+@media screen and (max-width: 900px) {
+    header {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+        
+            
+    main {
+        section.about,
+        section.services {
+            grid-template-columns: repeat(auto-fill, minmax(calc(300px + 3rem), 1fr));
+
+            .text {
+                padding: 3rem;
+
+                h2 {
+                    line-height: normal;
+                    font-size: 2rem;
+                }
+            }   
+        }
+            
+                
+                    
+        section.services {
+            .text {
+                padding: 16rem 3rem 1rem;
+            }
+        }
+            
+                
+        section.testimonials {
+            padding: 4rem 3rem;
+        }
+            
+        section.gallery {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+        
+}
+
+    
+            
+            
+@media screen and (max-width: 696px) {
+
+    header {
+        h1 {
+            font-size: 2.3rem;
+            padding: 1rem;
+            letter-spacing: .8rem;
+        }
+            
+        a {
+            color: var(--dark-grayish-blue);
+        }
+    }
+            
+    nav {
+        padding: 40px 1.3rem 80px;
+        &.mobile-menu {
+            &::after {
+                display: block;
+            }
+        }   
+            
+                
+        ul {
+            display: none;
+        }
+    }
+        
+            
+    main {
+        section.about,
+        section.services {
+            width: 100vw;
+
+            .text {
+                text-align: center;
+            }
+        }
+            
+                
+        section.about .cover {
+            grid-column: 1;
+        }
+            
+        section.testimonials {
+            padding: 4rem 1rem;
+
+            p {
+                &.client-name {
+                    margin-top: 2.2rem;
+                }
+            }
+        }
+    }
+}             
