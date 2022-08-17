@@ -14,14 +14,14 @@ main {
     }
 
     section#first .cover {
-        background: url('../images/desktop/image-transform.jpg') no-repeat center center / cover;
+        background: url('../../images/desktop/image-transform.jpg') no-repeat center center / cover;
         grid-column: 2;
         grid-row: 1;
     }
         
     section#second {
         .cover {
-            background: url('../images/desktop/image-stand-out.jpg') no-repeat bottom center / cover;
+            background: url('../../images/desktop/image-stand-out.jpg') no-repeat bottom center / cover;
         }
 
         a:hover::before {
@@ -31,7 +31,7 @@ main {
         
     section.services {
         .cover:first-child {
-            background: url('../images/desktop/image-graphic-design.jpg') no-repeat center center / cover;
+            background: url('../../images/desktop/image-graphic-design.jpg') no-repeat center center / cover;
 
             h2, p {
                 color: hsl(167, 40%, 24%);
@@ -39,7 +39,7 @@ main {
         }
                 
         .cover:last-child {
-            background: url('../images/desktop/image-photography.jpg') no-repeat center center / cover;
+            background: url('../../images/desktop/image-photography.jpg') no-repeat center center / cover;
 
             h2, p {
                 color: hsl(198, 62%, 26%);
