@@ -8,6 +8,10 @@
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="./dist/style.css">
 </head>
 <body>
@@ -15,11 +19,11 @@
     <nav>
       <a class="logo" href="#"><img src="./images/logo.svg" alt="sunnyside logo"/></a>
       <div class="burger-btn"></div>
-      <ul class="header-menu">
+      <ul>
         <li><a href="#" class="menu-link">About</a></li>
         <li><a href="#" class="menu-link">Services</a></li>
         <li><a href="#" class="menu-link">Projects</a></li>
-        <li><button class="contact-btn"><a href="#">Contact</a></button></li>
+        <li><a href="#" class="menu-button">Contact</a></li>
       </ul>
     </nav>
     <div>
@@ -28,7 +32,7 @@
     </div>
   </header>
   <main>
-    <section class="about">
+    <section class="about" id="first">
       <div class="cover"></div>
       <div class="text">
         <h2>Transform your brand</h2>
@@ -36,7 +40,7 @@
         <a href="#">Learn more</a>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="second">
       <div class="cover"></div>
       <div class="text">
         <h2>Stand out to the right audience</h2>
@@ -97,7 +101,7 @@
     </section>
   </main>
   <footer>
-    <img src="./images/logo_dark.svg" alt="sunnyside logo" />
+    <img src="./images/logo.svg" alt="sunnyside logo" />
     <nav>
       <ul>
         <li><a href="#">About</a></li>

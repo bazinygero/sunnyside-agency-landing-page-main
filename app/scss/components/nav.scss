@@ -1,0 +1,16 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px 80px;
+
+    ul {
+        display: flex;
+        gap: 40px;
+
+        li {
+            list-style: none;
+        }
+    }          
+}
+    

@@ -1,14 +1,89 @@
 @use '../util' as *;
 
-h1,
-h2,
-h3 {
-	margin-top: 0;
-	line-height: 1.1;
+section.about, section.services {
+    .text {
+        padding: 7rem;
+        margin: auto;
+        max-width: calc(500px + 14rem);
+
+        p { 
+            color: var(--dark-greyish-blue);
+            line-height: 26px;
+            padding-bottom: 2rem;
+        }
+            
+        h2 {
+            font-family: var(--font-fraunces);
+            color: var(--very-dark-desaturated-blue);
+            line-height: 3.2rem;
+            font-size: 3rem;
+            padding-bottom: 2rem;
+        }
+            
+        a {
+            font-family: var(--font-fraunces);
+            color: var(--very-dark-desaturated-blue);
+            text-transform: uppercase;
+            letter-spacing: .04rem;
+            font-weight: 900;
+            font-size: 15px;
+
+            &:hover::before {
+                content:'';
+                position: absolute;
+                margin-left: -8px;
+                margin-top: 12px;
+                height: 10px;
+                width: 130px;
+                background-color: var(--yellow);
+                border-radius: 12px;
+                z-index: -1;      
+            }
+        }
+    }
 }
 
-a,
-a:visited,
-a:active {
-	text-decoration: none;
+section.services {
+    .text {
+        text-align: center;
+        padding: 20rem 7rem 1rem;
+
+        h2 {
+            
+            font-size: 1.8rem;
+            line-height: 2rem;
+            padding-bottom: 1.4rem;
+        }
+            
+        
+        p {
+            max-width: 350px;
+            margin: auto;
+            font-size: 15px ;
+        }
+    }
+}
+
+section.testimonials {
+    h3 {
+        text-transform: uppercase;
+        font-family: var(--font-fraunces);
+        color: var(--grayish-blue);
+        letter-spacing: .3rem;
+    }
+        
+    p {
+        line-height: 26px;
+        
+        &.client-name {
+            font-family: var(--font-fraunces);
+            font-weight: 900;
+            color: var(--very-dark-desaturated-blue);
+            margin-top: 3.4rem;
+        }
+            
+        small {
+            color: var(--grayish-blue);
+        }
+    }
 }

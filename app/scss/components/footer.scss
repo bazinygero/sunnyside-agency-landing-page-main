@@ -1,0 +1,29 @@
+footer {
+    background-color: hsl(167,44%,70%);
+    text-align: center;
+    padding: 65px;
+    color: var(--dark-moderate-cyan);
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+        
+    .social-media {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        svg {
+            fill: hsl(168, 45%, 32%);
+
+            &:hover {
+                fill: var(--white);
+            }
+        }
+    }
+               
+    a:hover {
+        color: var(--white);
+    }     
+}
