@@ -4,7 +4,7 @@
 
 ## Links
 
-- [Live demo]()
+- [Live demo](https://bazinygero.github.io/sunnyside-agency-landing-page-main/)
 
 ## About
 This is a solution to the Sunnyside agency landing page challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef).
